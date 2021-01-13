@@ -53,7 +53,6 @@ class TcpServer:
         self.keep_connections = False
         self.timeout_in_seconds = 5.0
         
-
     def start(self):
         server_thread = threading.Thread(target=self.listen_loop)
         # Exit the server thread when the main thread terminates
